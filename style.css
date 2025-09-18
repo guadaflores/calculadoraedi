@@ -1,1 +1,120 @@
-/* Add styles here */
+/* Estilos Generales */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #1a1a1a; /* Fondo oscuro */
+    color: #e0e0e0; /* Texto claro */
+    margin: 0;
+}
+
+/* Contenedor Principal del Juego */
+.game-container {
+    background-color: #2c2c2c; /* Un gris un poco más claro */
+    padding: 2rem 3rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+    border: 1px solid #444;
+}
+
+h1 {
+    color: #61dafb; /* Un azul cian para el título */
+    margin-top: 0;
+}
+
+/* Contenedor para el Input y el Botón */
+.input-container {
+    display: flex;
+    gap: 0.5rem;
+    margin: 1.5rem 0;
+}
+
+#guessInput {
+    flex-grow: 1;
+    padding: 0.75rem;
+    border: 1px solid #555;
+    border-radius: 8px;
+    background-color: #333;
+    color: #fff;
+    font-size: 1rem;
+}
+
+#guessInput:focus {
+    outline: none;
+    border-color: #61dafb;
+}
+
+/* Estilos de los Botones */
+button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+#guessButton {
+    background-color: #007bff;
+    color: white;
+}
+
+#guessButton:hover {
+    background-color: #0056b3;
+}
+
+#guessButton:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+}
+
+/* Botón de Reinicio */
+#restartButton {
+    background-color: #28a745; /* Verde */
+    color: white;
+    width: 100%; /* Ocupa todo el ancho */
+    margin-top: 1rem;
+}
+
+#restartButton:hover {
+    background-color: #218838;
+}
+
+/* Contenedor de Mensajes */
+.message-container {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    border-radius: 10px;
+    min-height: 80px;
+    margin-top: 1.5rem;
+    border: 1px dashed #555;
+}
+
+#message-title {
+    margin: 0 0 0.5rem 0;
+    font-size: 0.9rem;
+    color: #aaa;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#message {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+#attempts {
+    margin-top: 0.5rem;
+    color: #ccc;
+}
+
+/* Clase para ocultar elementos */
+.hidden {
+    display: none;
+}
